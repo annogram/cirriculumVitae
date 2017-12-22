@@ -27,6 +27,14 @@
 		line-height: 1;
 	}
 
+  #nav ul li {
+    list-style: none;
+  }
+
+#nav ul li a {
+  text-decoration: none;
+}
+
 	ol, ul {
 		list-style: none;
 	}
@@ -48,6 +56,26 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+
+/* Top Button */
+
+  #top {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    z-index: 3000;
+    min-width: 10px;
+    background-color: transparent;
+    border-radius: 2em;
+    font-size: 30px;
+    color: #000;
+  }
+
+  #top:hover {
+    background-color: #fff;
+    color: #aaa;
+  }
 
 /* Box Model */
 
@@ -1656,6 +1684,10 @@
 		margin: 0 0 2em 0;
 	}
 
+  p.small {
+    font-size: 10px;
+    font-weight: bold;
+  } 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
 		line-height: 1em;
@@ -1666,6 +1698,11 @@
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			text-decoration: none;
 		}
+
+  #banner h1 {
+    font-size: 2.7em;
+    line-height: 1.7em;
+  }
 
 	h2 {
 		font-size: 1.5em;
@@ -2436,10 +2473,10 @@
 		}
 
 		table th {
-			font-size: 0.9em;
+			font-size: 1.2em;
 			font-weight: 700;
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: center;
 		}
 
 		table thead {
@@ -2733,6 +2770,10 @@
 			flex-direction: row-reverse;
 		}
 
+    .feature.center > .content{
+      width: 100%;
+    }
+
 		.feature .image {
 			width: 48%;
 		}
@@ -2814,7 +2855,7 @@
 
 		.image-grid .image {
 			margin: 0;
-			width: 25%;
+			width: 50%;
 		}
 
 			.image-grid .image img {
@@ -2848,7 +2889,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 8em 0 6em 0;
+		padding: 5em 0 6em 0;
 		position: relative;
 	}
 
@@ -3875,12 +3916,13 @@
 /* Banner */
 
 	#banner {
-		padding: 8em 0 6em 0;
+		padding: 3em 0 3em 0 !important;
 		background-color: #1E2832;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
 		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 		background-size: cover;
+    background-position-y:30%;
 		text-align: center;
 	}
 
@@ -4025,6 +4067,11 @@
 			width: 2.25em;
 		}
 
+  #banner a {
+    text-decoration:none;
+    color:inherit;
+  }
+
 		@media screen and (max-width: 1680px) {
 
 			#banner {
@@ -4084,6 +4131,11 @@
 				}
 
 		}
+
+/* Oab */ 
+/*   #oab img {
+    width:100%
+  } */
 
 /* Main */
 
